@@ -1,0 +1,29 @@
+{
+    "compilerOptions":{
+    //transpilador
+    "target": "es5",
+    //modulo que ira transpilar para o navegador
+    "module": "commonjs",
+    //pasta onde ficarão arquivos transcritos (javascript puro)
+    "outDir": "build",
+    //onde ficarão arquivos root
+    "typeRoots": [
+    "../node_modules/@types"
+    ],
+    //tipo do projeto
+    "types": [
+    "node"
+    ]
+    },
+    //arquivos que serão incluídos e serão transcritos para js
+    "include": [
+    "server/**/*.ts",
+    "server/*.ts"
+    ],
+    "exclude": [
+    "node_modules"
+    ],
+    //quando salvar arquivo ja compila e builda
+    "compileOnSave": true,
+    "buildOnSave": true
+    }
